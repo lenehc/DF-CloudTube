@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "DF CloudTube",
+  "version": "1.0",
+  "description": "",
+  "content_scripts": [
+    {
+      "matches": ["*://tube.cadence.moe/*", "*://raw.githubusercontent.com/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
